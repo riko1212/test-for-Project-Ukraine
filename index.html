@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>test</title>
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <div class="header-wrap">
+            <ul class="header-filters">
+              <li class="header-filters-item">
+                <input
+                  class="header-filters-input visually-hidden"
+                  id="section-1"
+                  name="section"
+                  type="radio"
+                  checked
+                />
+                <label class="header-filters-btn" for="section-1"
+                  >Section 1</label
+                >
+              </li>
+              <li class="header-filters-item">
+                <input
+                  class="header-filters-input visually-hidden"
+                  id="section-2"
+                  name="section"
+                  type="radio"
+                />
+                <label class="header-filters-btn" for="section-2"
+                  >Section 2</label
+                >
+              </li>
+              <li class="header-filters-item">
+                <input
+                  class="header-filters-input visually-hidden"
+                  id="section-3"
+                  name="section"
+                  type="radio"
+                />
+                <label class="header-filters-btn" for="section-3"
+                  >Section 3</label
+                >
+              </li>
+            </ul>
+            <button class="header-add" type="button">
+              <svg class="header-add-icon" width="14" height="15">
+                <use href="./images/icons.svg#icon-plus"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header-search search">
+            <div class="header-search-wrap search-wrap">
+              <input
+                class="header-search-input search-input"
+                name="header-search"
+                type="text"
+                placeholder="Search"
+              />
+              <svg class="header-search-icon search-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-glass"></use>
+              </svg>
+            </div>
+            <svg
+              class="header-search-voice-icon search-voice-icon"
+              width="20"
+              height="28"
+            >
+              <use href="./images/icons.svg#icon-microphone"></use>
+            </svg>
+          </div>
+          <div class="modal">
+            <div class="modal-controls">
+              <div class="modal-btns">
+                <button class="modal-left-btn" type="button">
+                  <span></span>
+                </button>
+                <button class="modal-right-btn" type="button">
+                  <svg class="modal-right-btn-icon" width="22" height="22">
+                    <use href="./images/icons.svg#icon-arr"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-search search">
+                <div class="modal-search-wrap search-wrap">
+                  <input
+                    class="modal-search-input search-input"
+                    name="modal-search"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <svg
+                    class="modal-search-icon search-icon"
+                    width="16"
+                    height="16"
+                  >
+                    <use href="./images/icons.svg#icon-glass"></use>
+                  </svg>
+                </div>
+                <svg
+                  class="modal-search-voice-icon search-voice-icon"
+                  width="20"
+                  height="28"
+                >
+                  <use href="./images/icons.svg#icon-microphone"></use>
+                </svg>
+              </div>
+              <div class="modal-filters">
+                <ul class="modal-filters-list">
+                  <li class="modal-filters-item">
+                    <input
+                      class="visually-hidden modal-filter-input"
+                      id="catalogue"
+                      name="modal-filters"
+                      type="checkbox"
+                    />
+                    <label class="modal-filter-text" for="catalogue"
+                      >Catalogue</label
+                    >
+                  </li>
+                  <li class="modal-filters-item">
+                    <input
+                      class="visually-hidden modal-filter-input"
+                      id="favorites"
+                      name="modal-filters"
+                      type="checkbox"
+                    />
+                    <label class="modal-filter-text" for="favorites"
+                      >Favorites</label
+                    >
+                  </li>
+                  <li class="modal-filters-item">
+                    <input
+                      class="visually-hidden modal-filter-input"
+                      id="shelf"
+                      name="modal-filters"
+                      type="checkbox"
+                    />
+                    <label class="modal-filter-text" for="shelf">Shelf</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-select">
+                <select class="modal-select-el" id="shelf" name="shelf">
+                  <option value="Shelf #1">Shelf #1</option>
+                </select>
+                <p class="select-text">Current shelf</p>
+                <svg class="modal-select-icon" width="26" height="25">
+                  <use href="./images/icons.svg#icon-arr"></use>
+                </svg>
+              </div>
+            </div>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <a class="modal-link" href>
+                  <img
+                    class="modal-pic"
+                    src="./images/bottle-2.png"
+                    alt="The Classic Laddie"
+                  />
+                  <div class="modal-link-descr">
+                    <h3 class="modal-link-name">
+                      <p>Bruichladdich</p>
+                      The Classic Laddie
+                    </h3>
+                    <p class="modal-link-bottom">Whisky Scotch American</p>
+                  </div>
+                  <ul class="modal-size-list">
+                    <li class="modal-size-item">
+                      <input
+                        type="radio"
+                        name="size"
+                        class="modal-size-input visually-hidden"
+                        id="size-1"
+                      />
+                      <label for="size-1" class="modal-size-input-label"
+                        >750</label
+                      >
+                    </li>
+                    <li class="modal-size-item">
+                      <input
+                        type="radio"
+                        name="size"
+                        class="modal-size-input visually-hidden"
+                        id="size-2"
+                        checked
+                      />
+                      <label for="size-2" class="modal-size-input-label"
+                        >750</label
+                      >
+                    </li>
+                    <li class="modal-size-item">
+                      <input
+                        type="radio"
+                        name="size"
+                        class="modal-size-input visually-hidden"
+                        id="size-3"
+                      />
+                      <label for="size-3" class="modal-size-input-label"
+                        >750</label
+                      >
+                    </li>
+                  </ul>
+                  <button class="modal-add">
+                    <svg class="modal-add-icon" width="14" height="15">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </a>
+              </li>
+              <li class="modal-item">
+                <a class="modal-link" href>
+                  <img
+                    class="modal-pic"
+                    src="./images/bottle-1.png"
+                    alt="The Classic Laddie"
+                  />
+                  <div class="modal-link-descr">
+                    <h3 class="modal-link-name">
+                      <p>Bruichladdich</p>
+                      The Laddie Eight
+                    </h3>
+                    <p class="modal-link-bottom">Whisky Scotch American</p>
+                  </div>
+                  <button class="modal-add">
+                    <svg class="modal-add-icon" width="14" height="15">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </a>
+              </li>
+              <li class="modal-item">
+                <a class="modal-link" href>
+                  <img
+                    class="modal-pic"
+                    src="./images/bottle-3.png"
+                    alt="The Classic Laddie"
+                  />
+                  <div class="modal-link-descr">
+                    <h3 class="modal-link-name">
+                      <p>Bruichladdich</p>
+                      Islay Barley 2011
+                    </h3>
+                    <p class="modal-link-bottom">Whisky Scotch American</p>
+                  </div>
+                  <button class="modal-add">
+                    <svg class="modal-add-icon" width="14" height="15">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </a>
+              </li>
+              <li class="modal-item">
+                <a class="modal-link" href>
+                  <img
+                    class="modal-pic"
+                    src="./images/bottle-4.png"
+                    alt="The Classic Laddie"
+                  />
+                  <div class="modal-link-descr">
+                    <h3 class="modal-link-name">
+                      <p>Bruichladdich</p>
+                      Black Art 09.1
+                    </h3>
+                    <p class="modal-link-bottom">Whisky Scotch American</p>
+                  </div>
+                  <button class="modal-add">
+                    <svg class="modal-add-icon" width="14" height="15">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="section liqueurs">
+          <div class="container">
+            <p class="section-pre-title">9 bottles on Shelf</p>
+            <div class="section-top">
+              <button class="section-open opened" type="button">
+                <svg class="section-open-icon" width="30" height="30">
+                  <use href="./images/icons.svg#icon-arr"></use>
+                </svg>
+              </button>
+    
+              <h2 class="section-title liqueurs-title">Liqueurs and other</h2>
+              <button class="section-more" type="button">
+                <svg class="section-more-icon" width="30" height="30">
+                  <use href="./images/icons.svg#icon-dots"></use>
+                </svg>
+              </button>
+              <button class="section-add" type="button">
+                <svg class="section-add-icon" width="14" height="15">
+                  <use href="./images/icons.svg#icon-plus"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="section-list">
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-2.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <span class="section-card-count">2</span>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-1.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-3.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section whiskey">
+          <div class="container">
+            <p class="section-pre-title">12 bottles on Shelf</p>
+            <div class="section-top">
+              <button class="section-open" type="button">
+                <svg class="section-open-icon" width="30" height="30">
+                  <use href="./images/icons.svg#icon-arr"></use>
+                </svg>
+              </button>
+    
+              <h2 class="section-title whiskey-title">
+                Shelf with expensive whiskey
+              </h2>
+              <button class="section-more" type="button">
+                <svg class="section-more-icon" width="30" height="30">
+                  <use href="./images/icons.svg#icon-dots"></use>
+                </svg>
+              </button>
+              <button class="section-add" type="button">
+                <svg class="section-add-icon" width="14" height="15">
+                  <use href="./images/icons.svg#icon-plus"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="section-list visually-hidden">
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-2.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-1.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-3.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section super">
+          <div class="container">
+            <p class="section-pre-title">4 bottles on Shelf</p>
+            <div class="section-top">
+              <button class="section-open opened" type="button">
+                <svg class="section-open-icon" width="30" height="30">
+                  <use href="./images/icons.svg#icon-arr"></use>
+                </svg>
+              </button>
+    
+              <h2 class="section-title super-title">My super shelf</h2>
+              <button class="section-more" type="button">
+                <svg class="section-more-icon" width="30" height="30">
+                  <use href="./images/icons.svg#icon-dots"></use>
+                </svg>
+              </button>
+              <button class="section-add" type="button">
+                <svg class="section-add-icon" width="14" height="15">
+                  <use href="./images/icons.svg#icon-plus"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="section-list">
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-2.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-1.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-3.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item">
+                <a class="section-card" href>
+                  <img
+                    class="section-card-img"
+                    src="./images/bottle-4.png"
+                    alt="Bruichladdich The Classic Laddie "
+                  />
+                  <h3 class="section-card-title">
+                    <p>Bruichladdich</p>
+                    The Classic Laddie
+                  </h3>
+                  <p class="section-card-bottom">300 ml remaining</p>
+                </a>
+              </li>
+              <li class="section-item empty">
+                <a class="section-card" href></a>
+              </li>
+              <li class="section-item empty">
+                <a class="section-card" href></a>
+              </li>
+              <li class="section-item empty">
+                <a class="section-card" href></a>
+              </li>
+              <li class="section-item empty">
+                <a class="section-card" href></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-bg">
+          <div class="container footer-container">
+            <button class="footer-btn" type="button">
+              <svg class="footer-btn-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-pack"></use>
+              </svg>
+              Stocktake
+            </button>
+            <button class="footer-btn" type="button">
+              <svg class="footer-btn-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+              Venue Database
+            </button>
+            <button class="footer-btn-add" type="button">
+              <span class="footer-btn-add-content">
+                <span class="footer-btn-add-inner">
+                  <svg class="footer-btn-add-icon" width="27" height="30">
+                    <use href="./images/icons.svg#icon-plus"></use>
+                  </svg>
+                </span>
+              </span>
+            </button>
+            <button class="footer-btn" type="button">
+              <svg class="footer-btn-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-sett"></use>
+              </svg>
+              Venue Settings
+            </button>
+            <button class="footer-btn" type="button">
+              <svg class="footer-btn-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-wave"></use>
+              </svg>
+              Venue Settings
+            </button>
+          </div>
+        </div>
+   
+    </footer>
+  </body>
+</html>
